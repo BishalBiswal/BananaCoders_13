@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="../public/css/login.css" rel="stylesheet">
+</head>
+<body>
+    <div id="login">
+        <form action="/login" method="post">
+
+            <div>
+                <h1>Log in</h1><br><br>
+            </div>
+            <div >
+                <p><a href="/alogin">Login as an artisan</a></p>
+            </div>
+            <div id="formdiv">
+            <div>
+                <label for="email">Email</label><br>
+                <div>
+                    <input type="email" name="email"><br><br>
+                </div>
+            </div>
+            <div>
+                <label for="password">Password</label><br>
+                <div>
+                    <input type="password" name="password"><br>
+                </div>
+            </div>
+            <button type="submit" class="btn">Sign in</button>
+            <br><br><br>
+            <p>Not a member?&nbsp;<a href="/register">Register</a>&nbsp;now</p>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+*{
+    margin: auto;
+}
+   body{ background-image: linear-gradient(to right, #d22e8c, #d5429e, #d753b0, #d963c1, #d972d2, #da73d1, #da73d1, #db74d0, #db67be, #da59ac, #d84c99, #d43e86);}
+
+#login{
+    margin-top: 25px;
+    background-color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    height: 450px;
+}
+#login form button{
+  margin-top: 10%;
+}
+#formdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input{
+    padding:3.6%;
+    width:320px;
+}
