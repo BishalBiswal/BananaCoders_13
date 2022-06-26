@@ -1,38 +1,246 @@
-.App {
-  text-align: center;
+#user-account {
+  display: flex;
+  justify-content: space-evenly;
+  width: 200px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.all {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn:hover {
+  background-color: transparent;
+  border-color: crimson;
+  color: coral;
+}
+
+.btn-outline-warning {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-color: transparent;
+  width: fit-content;
+  border-width: 2px;
+  border-radius: 5px;
+  color: coral;
+  box-shadow: none;
+}
+
+.btn-outline-warning:not(:disabled):not(.disabled):active:focus {
+  box-shadow: none;
+}
+
+.btn-outline-warning:focus {
+  background-color: antiquewhite;
+  border-color: crimson;
+  box-shadow: none;
+}
+
+.offcanvas {
+  z-index: 9999;
+  width: fit-content;
+}
+
+.head {
+  z-index: 999;
+  background-color: rgb(251, 227, 174);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  position: sticky;
+  top: 0px;
+}
+
+.discount {
+  background-color: rgb(255, 229, 194);
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.discount article {
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+#login1 {
+  display: flex;
+  flex-direction: row;
+  width: 208px;
+  justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-danger {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  border-width: 2px;
+  border-radius: 5px;
+  background-color: #e47f57;
+  box-shadow: none;
+}
+
+.btn-danger:focus {
+  background-color: #e45757;
+  border-color: crimson;
+}
+
+.btn:hover {
+  background-color: beige;
+}
+
+.btn-danger:not(:disabled, .disabled):active:focus {
+  box-shadow: none;
+}
+
+.hed {
+  color: #ca6868;
+  font-weight: 670;
+  font-family: Calibri;
+}
+
+#canva img {
+  width: 700px;
+  height: 525px;
+}
+
+#d1 {
+  border-width: 0px;
+  background-image: url('./chhata.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#d2 {
+  border-width: 0px;
+  background-image: url('./statues.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#d3 {
+  border-width: 0px;
+  background-image: url('./sareecarousel.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.mid {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.story {
+  background-image: url('./Pattachitra.jpg');
+  width: 700px;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 40%
+}
+
+.story p {
+  color: antiquewhite;
+  margin-top: 300px;
+  margin-left: 100px;
+  width: 300px;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.carousel {
+  border: none;
+  margin-left: 50px;
+  margin-top: 50px;
+  width: 700px;
+  height: 500px;
+}
+
+.carousel-caption {
+  font-weight: 800;
+}
+
+.card {
+  height: 400px;
+  margin: 15px;
+  width: 325px;
+  background-color: rgb(250, 246, 240);
+  box-shadow: 0px 0px 20px 6px#e4c1a6;
+  color: black;
+  cursor: pointer;
+}
+
+.card:hover {
+  border-color: #d34b4b;
+  border-width: 4px;
+}
+
+.card img {
+  height: 200px;
+}
+
+.cardd {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#i1 {
+  background-image: url('./kurti.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#i2 {
+  background-image: url('./sareecarousel.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#i3 {
+  background-image: url('./bag.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#i4 {
+  background-image: url('./necklace.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#i5 {
+  background-image: url('./rugsandcarpet.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.cardholder {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.card {
+  width: 250px;
 }
