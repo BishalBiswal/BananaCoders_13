@@ -10,6 +10,7 @@ import Bag from './bag'
 import Shop from './shop';
 import { BrowserRouter as Router, Route, Routes, Switch, link, BrowserRouter } from 'react-router-dom'
 import { FaCartPlus, FaHeadset, FaHome, FaListUl, FaPenNib, FaPhoneAlt, FaUserAlt } from 'react-icons/fa';
+import Bot from './Bot';
 function App() {
   return (
     <>

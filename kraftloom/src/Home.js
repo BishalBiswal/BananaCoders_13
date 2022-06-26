@@ -3,10 +3,12 @@ import './App.css';
 import { data } from './data.js'
 import Card from './card.js'
 import Shop from './shop';
+import Bot from './Bot';
 import { FaCartPlus, FaHeadset, FaHome, FaListUl, FaPenNib, FaPhoneAlt, FaUserAlt } from 'react-icons/fa';
 function Home() {
     return (
         <>
+            <Bot />
             <div className='all'>
                 <section className='head'>
                     <button className="btn btn-danger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas" aria-controls="offcanvas"> <FaListUl />&nbsp;&nbsp;Menu</button>
