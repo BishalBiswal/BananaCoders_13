@@ -29,7 +29,8 @@ function Home() {
                                 <button className='btn btn-outline-warning'><FaHome />&nbsp;&nbsp;Home</button>
                                 <a className='btn btn-outline-warning' href="/shop"><FaCartPlus />&nbsp;&nbsp;Shop</a>
                                 <div id="login1"><button className='btn btn-danger'><FaHome />&nbsp;&nbsp;login</button>
-                                    <button className='btn btn-danger'><FaHome />&nbsp;&nbsp;signup</button></div>
+                                    <a className='btn btn-danger' href='/signup'><FaHome />&nbsp;&nbsp;signup</a>
+                                </div>
                             </div>
                         </div>
                     </div>

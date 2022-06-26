@@ -1,6 +1,6 @@
-const express=require('express')
-const app=express();
-const port=process.env.PORT || 80;
+const express = require('express')
+const app = express();
+const port = 1377;
 const cors = require('cors');
 const RegisteredUsers = require("./models/Register");
 const { default: mongoose } = require('mongoose');
@@ -10,7 +10,7 @@ app.use(express.json())
 
 mongoose.connect('mongodb://localhost:27017/kraftloom');
 
-app.post('/api/registers',(req,res)=>{
+app.post('/api/registers', (req, res) => {
     try {
         const pass = req.body.password;
         const cpass = req.body.cpassword;
@@ -35,11 +35,12 @@ app.post('/api/registers',(req,res)=>{
 })
 app.post('/api/login', async (req, res) => {
     try {
-        const email=req.body.email;
-        const password=req.body.password;
-        const user=await RegisteredUsers.findOne({email:email});
-        if(user.password==password){
-        res.status(200).render('home.hbs');}else{
+        const email = req.body.email;
+        const password = req.body.password;
+        const user = await RegisteredUsers.findOne({ email: email });
+        if (user.password == password) {
+            res.status(200).render('home.hbs');
+        } else {
             res.send('Invalid login details');
         }
     } catch (error) {
@@ -52,6 +53,6 @@ app.post('/api/login', async (req, res) => {
 //-------------------stats---------------
 
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`Server started on port ${port}`);
 })
